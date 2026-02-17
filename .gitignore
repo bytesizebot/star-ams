@@ -1,46 +1,42 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+############################
+# GENERAL
+############################
+.DS_Store
+*.log
+*.orig.*
 
-# dependencies
+############################
+# NODE / REACT NATIVE
+############################
 node_modules/
-
-# Expo
 .expo/
 dist/
 web-build/
+*.tsbuildinfo
 expo-env.d.ts
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
+# Environment files
 .env*.local
 
-# typescript
-*.tsbuildinfo
+# Generated native folders (Expo)
+ios/
+android/
 
-app-example
+############################
+# JAVA / SPRING BOOT
+############################
+target/
+build/
+out/
 
-# generated native folders
-/ios
-/android
+############################
+# IDEs
+############################
 
 # IntelliJ
 .idea/
@@ -49,18 +45,12 @@ app-example
 # VS Code
 .vscode/
 
-# Java
-target/
-build/
-out/
-
-# Node
-node_modules/
-.expo/
-dist/
-
-# Logs
-*.log
-
-# OS
-.DS_Store
+############################
+# KEYS & CERTIFICATES
+############################
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
